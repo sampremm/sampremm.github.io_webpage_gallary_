@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    height: 500px;
+    width: 400px;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+.container{
+height: 100%;
+max-width:1500px;
+margin: 0 auto;
+padding: 20px;
+
+}
+.container h1{
+    margin: 20px 0;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    text-align: center;
+ 
+}
+.gallary{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.www{
+    width:32%;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.www img{
+    height: 100%;
+    width: 100%;
+    filter: grayscale(100%);
+    box-shadow: 0 0 20px #333;
+    object-fit: cover;
+}
+.www:hover{
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 10px #333);
+    transition: 0.78s;
+}
+.www:hover img {
+    filter: grayscale(0);
+}
+.www figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    height: 20%;
+    width: 100px;
+    opacity: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+    background:linear-gradient(0 deg,rgba(0 0 0 0.5)rgba(255,255,255,0)100% );
+    transition: 0.3s;
+}
+.www:hover figcaption{
+    opacity: 1;
+    transform: scale(1.03);
+}
